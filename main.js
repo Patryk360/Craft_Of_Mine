@@ -5,10 +5,12 @@ ctx.fillRect(0, 0, 1000, 800);
 
 let fps = 30;
 let username = "early alpha";
+let multiplayerServer = "ws://localhost:8080";
 
 const start = () => {
-    const ws = new WebSocket('ws://localhost:8080');
-    ws.addEventListener('open', () => {
+    const ws = new WebSocket(multiplayerServer);
+    ws.addEventListener("error", () => console.log("Error! Brak połączenia z serwerem!"));
+    ws.addEventListener("open", () => {
         ws.send("test");
     });
 
