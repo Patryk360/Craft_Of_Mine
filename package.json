@@ -1,0 +1,12 @@
+{
+  "name": "com-server",
+  "version": "0.0.1",
+  "description": "Serwer gry Craft Of Mine",
+  "main": "main.js",
+  "repository": "https://github.com/Patryk360/Craft_Of_Mine.git",
+  "author": "Patryk360 <nexigamingyt@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.6.0"
+  }
+}
