@@ -7,6 +7,11 @@ let fps = 30;
 let username = "early alpha";
 
 const start = () => {
+    const ws = new WebSocket('ws://localhost:8080');
+    ws.addEventListener('open', () => {
+        ws.send("test");
+    });
+
     player(ctx, false);
     let fpsTest = Date.now();
     setInterval(() => {
