@@ -23,7 +23,7 @@ const start = () => {
         ctx.fillRect(0, 0, 1000, 800);
         player(ctx, true, 1, 1);
         ctx.font = '16px serif';
-        ctx.fillText(((1000/fpsTest).toFixed(0)).replace("-",""), 5, 18);
+        ctx.fillText(((1000/fpsTest).toFixed(0)).replace("-","")+" fps", 5, 18);
         fpsTest = Date.now();
     }, 1000/fps);
 }
